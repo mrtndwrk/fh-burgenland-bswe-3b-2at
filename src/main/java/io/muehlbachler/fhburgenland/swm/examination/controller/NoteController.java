@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import io.muehlbachler.fhburgenland.swm.examination.model.Note;
 import io.muehlbachler.fhburgenland.swm.examination.service.NoteService;
 
-
+/**
+ * Controller for managing Note entities.
+ */
 @RestController
 @RequestMapping("note")
 public class NoteController {

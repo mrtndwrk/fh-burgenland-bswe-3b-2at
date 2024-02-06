@@ -14,6 +14,9 @@ import io.muehlbachler.fhburgenland.swm.examination.model.Note;
 import io.muehlbachler.fhburgenland.swm.examination.model.Person;
 import io.muehlbachler.fhburgenland.swm.examination.service.PersonService;
 
+/**
+ * Controller for managing Person entities.
+ */
 @RestController
 @RequestMapping("person")
 public class PersonController {

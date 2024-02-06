@@ -17,5 +17,5 @@ public interface NoteRepository extends CrudRepository<Note, String> {
      * @param content The content query used to filter Notes.
      * @return List of Notes matching the provided content query.
      */
-    public abstract List<Note> findByContentContaining(String content);
+    List<Note> findByContentContaining(String content);
 }
