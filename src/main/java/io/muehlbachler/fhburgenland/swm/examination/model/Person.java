@@ -47,7 +47,7 @@ public class Person {
     /**
      * Creates a new Person.
      */
-public Person(String id, String firstName, String lastName) {
+    public Person(String id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
