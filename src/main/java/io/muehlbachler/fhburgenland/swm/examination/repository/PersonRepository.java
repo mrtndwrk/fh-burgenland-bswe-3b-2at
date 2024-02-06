@@ -14,7 +14,7 @@ public interface PersonRepository extends CrudRepository<Person, String> {
      * @param firstName The first name query used to filter Persons.
      * @return List of Persons matching the provided first name query.
      */
-    List<Person> findByFirstName(String firstName);
+    public abstract List<Person> findByFirstName(String firstName);
 
 
     /**
@@ -23,7 +23,7 @@ public interface PersonRepository extends CrudRepository<Person, String> {
      * @param lastName The last name query used to filter Persons.
      * @return List of Persons matching the provided last name query.
      */
-    List<Person> findByLastName(String lastName);
+    public abstract List<Person> findByLastName(String lastName);
 
     /**
      * Queries for Persons based on first and last name.
@@ -33,5 +33,5 @@ public interface PersonRepository extends CrudRepository<Person, String> {
      * @param lastName  The last name used for filtering.
      * @return List of Persons matching the provided first and last name.
      */
-    List<Person> findByFirstNameAndLastName(String firstName, String lastName);
+    public abstract List<Person> findByFirstNameAndLastName(String firstName, String lastName);
 }
