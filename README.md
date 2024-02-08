@@ -3,6 +3,13 @@ This repository has been forked from https://github.com/muhlba91/fh-burgenland-b
 It uses Java Sprint Boot and Gradle as a Build Tool. It has been designed with Gradle 8.6 and Java 21.
 You can find the Gradle Wrapper under `gradlew.bat`
 
+![Deployment Status](https://github.com/mrtndwrk/fh-burgenland-bswe-3b-2at/actions/workflows/gradle.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+
+
+
 
 
 ## Getting started - Windows & IntelliJ
