@@ -60,5 +60,5 @@ It has then been improved upon by https://github.com/mrtndwrk in the following p
   - Build (runnable jar file)
   - Container being pushed to GitHub Container Registry
  
-  - ## License
-    This project uses the MIT License which can be found under `LICENSE.md` in the project's root folder
+## License
+This project uses the MIT License which can be found under `LICENSE.md` in the project's root folder
