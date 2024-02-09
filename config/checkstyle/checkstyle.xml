@@ -59,7 +59,9 @@
 
 
     <module name="ClassMemberImpliedModifier" />
-    <module name="InterfaceMemberImpliedModifier"/>
+    <module name="InterfaceMemberImpliedModifier">
+      <property name="modifiers" value="public, abstract"/>
+    </module>
     <module name="ModifierOrder"/>
     <module name="RedundantModifier"/>
     <module name="OuterTypeFilename"/>
