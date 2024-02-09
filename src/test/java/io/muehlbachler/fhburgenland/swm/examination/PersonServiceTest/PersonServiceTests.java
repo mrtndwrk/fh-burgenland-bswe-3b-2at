@@ -77,37 +77,5 @@ public class PersonServiceTests {
         assertEquals(person, result);
     }
 
-//    /**
-//     * Test case to verify the retrieval of persons by first and last name.
-//     */
-//    @Test
-//    public void testFindByName() {
-//        String firstName = "John";
-//        String lastName = "Doe";
-//
-//        List<Person> persons = new ArrayList<>();
-//        persons.add(new Person("1", "John", "Doe"));
-//
-//        personRepository.save(persons.getFirst());
-//        List<Person> result = personService.findByName(firstName, lastName);
-//
-//        assertEquals(persons, result);
-//    }
-//
-//    /**
-//     * Test case to verify the creation of a note for a person.
-//     */
-//    @Test
-//    public void testCreateNote() {
-//        String personId = "1";
-//        Person person = new Person(personId, "John", "Doe");
-//        Note note = new Note("1", "Some note");
-//
-//        personRepository.save(person);
-//
-//        Optional<Note> result = personService.createNote(personId, note);
-//
-//        assertTrue(result.isPresent());
-//        assertEquals(note, result.get());
-//    }
+
 }

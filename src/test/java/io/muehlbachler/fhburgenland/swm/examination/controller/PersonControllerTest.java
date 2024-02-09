@@ -26,28 +26,6 @@ public class PersonControllerTest {
         assertEquals("John", person.getBody().getFirstName(), "firstName should be John");
     }
 
-//    @Test
-//    void testCreateNote() {
-//        String personId = "81150016-8501-4b97-9168-01113e21d8a5"; // Ensure person exists
-//        Note newNote = new Note("Some note");
-//
-//        // Retrieve the person from the database before creating the note
-//        Person person = personService.get(personId);
-//
-//        ResponseEntity<Note> createdNoteResponse = personController.createNote(personId, newNote);
-//
-//        assertEquals(HttpStatus.OK, createdNoteResponse.getStatusCode(), "Note should be created successfully");
-//        assertNotNull(createdNoteResponse.getBody(), "Created note should not be null");
-//        assertEquals("Some note", createdNoteResponse.getBody().getContent(), "Note content should be 'Some note'");
-//    }
 
-//    @Test
-//    void testCreatePerson() {
-//        Person newPerson = new Person("John", "Doe"); // Ensure firstName is not null
-//        Person createdPerson = personController.create(newPerson);
-//
-//        assertNotNull(createdPerson, "Person should be created successfully");
-//        assertEquals("John", createdPerson.getFirstName(), "First name should be John");
-//    }
 
 }
