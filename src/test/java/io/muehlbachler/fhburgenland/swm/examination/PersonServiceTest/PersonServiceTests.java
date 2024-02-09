@@ -10,18 +10,16 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.eq;
 
 @ExtendWith(MockitoExtension.class)
 
 public class PersonServiceTests {
+
 
     @Mock
     private PersonRepository personRepository;
@@ -32,6 +30,9 @@ public class PersonServiceTests {
     @InjectMocks
     private PersonServiceImpl personService;
 
+    /**
+     * Test case to verify the retrieval of all persons.
+     */
     @Test
     public void testGetAll() {
         List<Person> persons = new ArrayList<>();
@@ -44,6 +45,9 @@ public class PersonServiceTests {
         assertEquals(persons, result);
     }
 
+    /**
+     * Test case to verify the retrieval of a person by ID.
+     */
     @Test
     public void testGet() {
         String personId = "1";
@@ -57,6 +61,11 @@ public class PersonServiceTests {
         assertEquals(person, result.get());
     }
 
+
+
+    /**
+     * Test case to verify the creation of a new person.
+     */
     @Test
     public void testCreate() {
         Person person = new Person("1", "John", "Doe");
@@ -68,6 +77,9 @@ public class PersonServiceTests {
         assertEquals(person, result);
     }
 
+    /**
+     * Test case to verify the retrieval of persons by first and last name.
+     */
     @Test
     public void testFindByName() {
         String firstName = "John";
@@ -83,6 +95,9 @@ public class PersonServiceTests {
         assertEquals(persons, result);
     }
 
+    /**
+     * Test case to verify the creation of a note for a person.
+     */
     @Test
     public void testCreateNote() {
         String personId = "1";
